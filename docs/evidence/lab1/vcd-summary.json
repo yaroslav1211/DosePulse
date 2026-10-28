@@ -1,0 +1,24 @@
+{
+  "file": "docs/captures/lab1-uart-led.vcd",
+  "duration_ns": 106057752225,
+  "channels": {
+    "D0": {
+      "transitions": 109,
+      "rising": 55,
+      "interval_us": {
+        "min": 845368.9,
+        "mean": 1964019.2027777778,
+        "max": 2003959.5
+      }
+    },
+    "D1": {
+      "transitions": 9802,
+      "rising": 4901,
+      "interval_us": {
+        "min": 17.375,
+        "mean": 21472.078280612244,
+        "max": 1000794.125
+      }
+    }
+  }
+}

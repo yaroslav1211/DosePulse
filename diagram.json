@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "template",
+  "author": "DosePulse",
   "editor": "wokwi",
   "parts": [
     {
@@ -9,11 +9,48 @@
       "top": 0,
       "left": 0,
       "attrs": {}
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": 160,
+      "left": 0,
+      "attrs": {
+        "filename": "lab1-uart-led.vcd"
+      }
     }
   ],
   "connections": [
-    ["$serialMonitor:TX", "nucleo:PA3", "", []],
-    ["$serialMonitor:RX", "nucleo:PA2", "", []]
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "nucleo:PA5",
+      "logic:D0",
+      "green",
+      []
+    ],
+    [
+      "nucleo:PA2",
+      "logic:D1",
+      "blue",
+      []
+    ],
+    [
+      "nucleo:GND.1",
+      "logic:GND",
+      "black",
+      []
+    ]
   ],
   "dependencies": {}
 }

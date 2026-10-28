@@ -1,0 +1,5 @@
+tick 3 led=1
+tick 4 led=0
+tick 5 led=1
+tick 6 led=0
+tick 7 led=1

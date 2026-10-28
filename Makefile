@@ -12,3 +12,10 @@ build: image
 
 clean:
 	$(MAKE) -C firmware clean
+
+.PHONY: flash monitor
+flash:
+	@echo "VS Code: Wokwi: Start Simulator (uses wokwi.toml ELF/HEX)"
+
+monitor:
+	python3 tools/monitor.py

@@ -1,0 +1,16 @@
+name: DosePulse firmware and host tests
+on:
+  pull_request:
+  push:
+    branches: [lab1, lab2]
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ARM firmware in Docker
+        run: make build
+      - name: Host tests and layer checks
+        run: make test
+      - name: Coverage
+        run: make coverage

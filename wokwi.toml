@@ -3,3 +3,10 @@ version = 1
 firmware = 'firmware/build/firmware.hex'
 elf = 'firmware/build/firmware.elf'
 rfc2217ServerPort = 4192
+vcdFile = 'docs/captures/lab2-latest.vcd'
+
+[[sdcard]]
+part = 'sd'
+image = 'media/demo-sd.img'
+size = '8M'
+writeback = true

@@ -1,0 +1,35 @@
+{
+  "capture": "docs/captures/lab2-integration.vcd",
+  "capture_sha256": "3d75e697e7a521723a745ecff3d63a6d7ab0de10f04b9d8a09e41dcfd4f4e696",
+  "decoded": "docs/evidence/lab2/i2c-decoded.txt",
+  "register": "0x3b",
+  "bytes": [
+    0,
+    0,
+    0,
+    0,
+    64,
+    0,
+    239,
+    92,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "uart_expected": {
+    "a_mg": [
+      0,
+      0,
+      1000
+    ],
+    "temp_mc": 24001,
+    "gyro_mdps": [
+      0,
+      0,
+      0
+    ]
+  }
+}

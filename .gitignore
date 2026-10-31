@@ -2,3 +2,6 @@
 firmware/build/
 wokwi.vcd
 *.swp
+media/demo-sd.img
+build-host/
+*.gcov

@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 
 #include <stdio.h>
+#include "dp_bench.h"
 
 /* USER CODE END Includes */
 
@@ -54,7 +55,9 @@ UART_HandleTypeDef huart2;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+#ifdef DP_HARDWARE_I2C
 static void MX_I2C1_Init(void);
+#endif
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
@@ -103,11 +106,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+#ifdef DP_HARDWARE_I2C
   MX_I2C1_Init();
+#endif
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  printf("DosePulse lab1 STM32C031C6 ready\r\n");
+  dp_bench_start();
 
   /* USER CODE END 2 */
 
@@ -118,9 +123,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-    printf("tick %lu led=%u\r\n", (unsigned long)(HAL_GetTick() / 1000U), (unsigned)HAL_GPIO_ReadPin(Led_GPIO_Port, Led_Pin));
-    HAL_Delay(1000);
+    dp_bench_poll();
   }
   /* USER CODE END 3 */
 }
@@ -166,6 +169,7 @@ void SystemClock_Config(void)
   * @param None
   * @retval None
   */
+#ifdef DP_HARDWARE_I2C
 static void MX_I2C1_Init(void)
 {
 
@@ -208,6 +212,8 @@ static void MX_I2C1_Init(void)
   /* USER CODE END I2C1_Init 2 */
 
 }
+
+#endif
 
 /**
   * @brief USART2 Initialization Function

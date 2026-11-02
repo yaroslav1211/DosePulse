@@ -5,9 +5,13 @@
 #include "dp_i2c_gpio.h"
 static void delay(unsigned us){uint16_t start=(uint16_t)TIM3->CNT;while((uint16_t)((uint16_t)TIM3->CNT-start)<us){}}
 static void drive(uint16_t pin,int high){
- GPIO_InitTypeDef g={0};g.Pin=pin;g.Mode=high?GPIO_MODE_INPUT:GPIO_MODE_OUTPUT_OD;g.Pull=GPIO_PULLUP;g.Speed=GPIO_SPEED_FREQ_HIGH;
+ /* OTYPER/PUPDR are configured once by HAL. Switching only MODER avoids
+  * a full HAL_GPIO_Init per I2C edge (measured burst was >23ms).
+  * UART ISR does not modify GPIOB modes; this adapter owns both pins. */
+ unsigned shift=pin==GPIO_PIN_8?16u:18u;
  if(!high)HAL_GPIO_WritePin(GPIOB,pin,GPIO_PIN_RESET);
- HAL_GPIO_Init(GPIOB,&g);
+ uint32_t mode=GPIOB->MODER&~(3u<<shift);
+ GPIOB->MODER=mode|(high?0u:(1u<<shift));
 }
 static void sda(int high){drive(GPIO_PIN_9,high);}
 static void scl(int high){drive(GPIO_PIN_8,high);}

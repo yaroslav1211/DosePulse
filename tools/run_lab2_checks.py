@@ -5,7 +5,14 @@ from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--output',default='docs/evidence/lab2/integration');a=p.parse_args();out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True)
 schedule=[(4000,'selftest'),(5000,'anomaly'),(6000,'tare'),(6500,'fault'),(9000,'recover'),(18000,'sdprobe'),(21000,'invalid'),(21500,'x'*80),(24000,'sdread'),(29000,'counts')]
 raw=bytearray();pending=bytearray();sent=[];started=time.monotonic();last_t=0;finished=False;base=None
-with serial.serial_for_url('rfc2217://127.0.0.1:4192',baudrate=115200,timeout=.2) as uart:
+uart=None
+for attempt in range(12):
+    try:
+        uart=serial.serial_for_url('rfc2217://127.0.0.1:4192',baudrate=115200,timeout=.2);break
+    except serial.SerialException as error:
+        print('RFC2217 retry',attempt,str(error),flush=True);time.sleep(1)
+if uart is None:raise RuntimeError('Wokwi UART unavailable after bounded retries')
+with uart:
     uart.write(b'status\n')
     while time.monotonic()-started<150:
         block=uart.read(4096);raw.extend(block);pending.extend(block)

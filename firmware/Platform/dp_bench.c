@@ -143,7 +143,7 @@ void dp_bench_poll(void){
   if(imu_result!=DP_OK){mpu_ready=false;bus_errors++;}
   dp_quality_motion(&quality,&motion,imu_result==DP_OK,now);imu_count++;
  }
- if((uint32_t)(now-last_hx)>=100&&!hx_off){
+ if((uint32_t)(now-last_hx)>=10&&!hx_off){
   last_hx=now;uint32_t mask=__get_PRIMASK();__disable_irq();hx_result=dp_hx_read(&bus,&hx_raw);__set_PRIMASK(mask);
   if(hx_result==DP_OK){dp_quality_mass(&quality,dp_hx_mg(hx_raw,0),true,now);hx_count++;}
   else if(hx_result!=DP_NOT_READY)dp_quality_mass(&quality,0,false,now);

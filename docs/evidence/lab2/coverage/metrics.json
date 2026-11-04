@@ -1,0 +1,26 @@
+{
+  "firmware/Devices/dp_sensors.c": {
+    "lines": 38,
+    "lines_covered": 38,
+    "line_percent": 100.0,
+    "branches": 24,
+    "branches_covered": 24,
+    "branch_percent": 100.0
+  },
+  "firmware/Devices/dp_sd.c": {
+    "lines": 45,
+    "lines_covered": 45,
+    "line_percent": 100.0,
+    "branches": 52,
+    "branches_covered": 50,
+    "branch_percent": 96.15384615384616
+  },
+  "firmware/App/dp_quality.c": {
+    "lines": 35,
+    "lines_covered": 35,
+    "line_percent": 100.0,
+    "branches": 58,
+    "branches_covered": 50,
+    "branch_percent": 86.20689655172414
+  }
+}

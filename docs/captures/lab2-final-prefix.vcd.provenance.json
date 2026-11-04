@@ -1,0 +1,6 @@
+{
+  "source": "docs/captures/lab2-final-sensor-checks.vcd",
+  "sha256": "41d1637b7ff54a498d3bdc6669fc496b286c774352fdb2fb4edecfb4f765189d",
+  "end_ns": 400000000,
+  "transformation": "Prefix selection only, unchanged digital samples and original timestamps."
+}

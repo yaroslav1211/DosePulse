@@ -1,0 +1,6 @@
+python3 tools/coverage.py
+PASS DosePulse sensor conversion, bus errors, HX clocks, median, stability, freshness, rollover, target filter
+PASS SD command/CRC order, SDHC identity, raw read/write, data token, busy timeout, failures
+firmware/Devices/dp_sensors.c lines=100.00% branches=100.00%
+firmware/Devices/dp_sd.c lines=100.00% branches=96.15%
+firmware/App/dp_quality.c lines=100.00% branches=86.21%

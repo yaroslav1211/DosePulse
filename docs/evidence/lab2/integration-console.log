@@ -1,0 +1,7 @@
+=1 a_mg=0,0,0 gyro_mdps=0,0,0 temp_mc=0 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=55567 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,0 gyro_mdps=0,0,0 temp_mc=0 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+Traceback (most recent call last):
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/SP-Labs/tools/run_lab2_checks.py", line 27, in <module>
+    assert expected in text,expected
+           ^^^^^^^^^^^^^^^^
+AssertionError: SELF device=MPU6050 addr=68 result=0

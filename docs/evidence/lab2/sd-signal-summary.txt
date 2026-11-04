@@ -1,0 +1,246 @@
+{
+  "capture": "docs/captures/lab2-sd-final.vcd",
+  "mode": 0,
+  "channels": {
+    "clock": "D6",
+    "CS": "D7",
+    "MOSI": "D0",
+    "MISO": "D1"
+  },
+  "commands": [
+    {
+      "command": 0,
+      "arg": 0,
+      "command_bytes": [
+        64,
+        0,
+        0,
+        0,
+        0,
+        149
+      ],
+      "start_ns": 2117813000,
+      "duration_us": 1520.0,
+      "bytes": 9
+    },
+    {
+      "command": 8,
+      "arg": 426,
+      "command_bytes": [
+        72,
+        0,
+        0,
+        1,
+        170,
+        135
+      ],
+      "start_ns": 2119508000,
+      "duration_us": 2209.5,
+      "bytes": 13
+    },
+    {
+      "command": 55,
+      "arg": 0,
+      "command_bytes": [
+        119,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2121890000,
+      "duration_us": 1518.5,
+      "bytes": 9
+    },
+    {
+      "command": 41,
+      "arg": 1073741824,
+      "command_bytes": [
+        105,
+        64,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2123583500,
+      "duration_us": 1519.0,
+      "bytes": 9
+    },
+    {
+      "command": 58,
+      "arg": 0,
+      "command_bytes": [
+        122,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2125275000,
+      "duration_us": 2192.0,
+      "bytes": 13
+    },
+    {
+      "command": 17,
+      "arg": 4096,
+      "command_bytes": [
+        81,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      "start_ns": 2127824000,
+      "duration_us": 89439.5,
+      "bytes": 528,
+      "read_payload_sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "all_zero": true,
+      "matches_pattern": false
+    },
+    {
+      "command": 24,
+      "arg": 4096,
+      "command_bytes": [
+        88,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      "start_ns": 2219417000,
+      "duration_us": 90797.0,
+      "bytes": 544,
+      "write_payload_sha256": "27655cd32576d8fa434a01666ec79058a040059e471ce12f5483e937107e22c4",
+      "data_response_bytes": [
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "command": 17,
+      "arg": 4096,
+      "command_bytes": [
+        81,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      "start_ns": 2310569500,
+      "duration_us": 89449.0,
+      "bytes": 528,
+      "read_payload_sha256": "27655cd32576d8fa434a01666ec79058a040059e471ce12f5483e937107e22c4",
+      "all_zero": false,
+      "matches_pattern": true
+    },
+    {
+      "command": 0,
+      "arg": 0,
+      "command_bytes": [
+        64,
+        0,
+        0,
+        0,
+        0,
+        149
+      ],
+      "start_ns": 2542807000,
+      "duration_us": 1513.5,
+      "bytes": 9
+    },
+    {
+      "command": 8,
+      "arg": 426,
+      "command_bytes": [
+        72,
+        0,
+        0,
+        1,
+        170,
+        135
+      ],
+      "start_ns": 2544495500,
+      "duration_us": 2209.5,
+      "bytes": 13
+    },
+    {
+      "command": 55,
+      "arg": 0,
+      "command_bytes": [
+        119,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2546879000,
+      "duration_us": 1519.5,
+      "bytes": 9
+    },
+    {
+      "command": 41,
+      "arg": 1073741824,
+      "command_bytes": [
+        105,
+        64,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2548573500,
+      "duration_us": 1517.5,
+      "bytes": 9
+    },
+    {
+      "command": 58,
+      "arg": 0,
+      "command_bytes": [
+        122,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start_ns": 2550265000,
+      "duration_us": 2202.0,
+      "bytes": 13
+    },
+    {
+      "command": 17,
+      "arg": 4096,
+      "command_bytes": [
+        81,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      "start_ns": 2552823000,
+      "duration_us": 89439.5,
+      "bytes": 528,
+      "read_payload_sha256": "27655cd32576d8fa434a01666ec79058a040059e471ce12f5483e937107e22c4",
+      "all_zero": false,
+      "matches_pattern": true
+    }
+  ],
+  "clock_period_us": {
+    "n": 17858,
+    "min": 19.5,
+    "mean": 21.089511703438234,
+    "max": 28.5
+  },
+  "write_payload_verified": true,
+  "zero_before_and_pattern_after": true
+}

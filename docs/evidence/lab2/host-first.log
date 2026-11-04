@@ -1,0 +1,6 @@
+python3 tools/check_dependencies.py
+PASS App/Devices do not include HAL, Core main or Platform
+mkdir -p build-host
+cc -std=c11 -Wall -Wextra -Werror -Ifirmware/Devices -Ifirmware/App tests/test_sensors.c firmware/Devices/dp_sensors.c firmware/App/dp_quality.c -o build-host/test-sensors
+./build-host/test-sensors
+PASS DosePulse sensor conversion, bus errors, HX clocks, median, stability, freshness, rollover, target filter

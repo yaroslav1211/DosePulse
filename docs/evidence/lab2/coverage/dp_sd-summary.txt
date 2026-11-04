@@ -1,0 +1,7 @@
+File 'firmware/Devices/dp_sd.c'
+Lines executed:100.00% of 45
+Branches executed:100.00% of 52
+Taken at least once:96.15% of 52
+No calls
+Creating 'dp_sd.c.gcov'
+

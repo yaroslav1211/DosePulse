@@ -1,0 +1,35 @@
+SELF device=MPU6050 addr=68 result=0 expected_id=68 state=0 err=0 isr=8
+SELF device=HX711 id=none result=4 raw=105 valid=1
+SELF device=ADC result=0 raw=0 mv=0
+DATA t=2508 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=3010 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=3513 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=4016 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=4518 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=5020 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=5522 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=6024 hx=105 mg=250000 net_mg=250000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=0 mv=0 target_g=100 moving=0 stable=1
+DATA t=2011 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SELF device=MPU6050 addr=68 result=0 expected_id=68 state=0 err=0 isr=8
+SELF device=HX711 id=none result=4 raw=210 valid=1
+SELF device=ADC result=0 raw=2050 mv=1652
+DATA t=2513 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3017 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3520 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4023 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4526 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5029 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5532 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=6035 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SELF device=MPU6050 addr=68 result=0 expected_id=68 state=0 err=0 isr=8
+SELF device=HX711 id=none result=4 raw=420 valid=1
+SELF device=ADC result=0 raw=4095 mv=3300
+DATA t=2007 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=2511 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=3015 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=3518 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=4021 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=4524 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=5027 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+DATA t=5530 hx=420 mg=1000000 net_mg=1000000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=4095 mv=3300 target_g=1000 moving=0 stable=1
+Saved all real startup input cases; ordinary diagram restored

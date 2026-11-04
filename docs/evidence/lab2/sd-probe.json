@@ -1,0 +1,9 @@
+{
+  "commands": [
+    "sdprobe",
+    "sdread"
+  ],
+  "write_ok": true,
+  "read_ok": true,
+  "ELF_sha256": "e05292f56606e9616dabc927fed1b138d5f9d1b7be86b0961141b2bdc6137945"
+}

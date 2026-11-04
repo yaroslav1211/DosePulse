@@ -1,0 +1,78 @@
+{
+  "file": "docs/captures/lab2-gpio-after-hardware-init-failed.vcd",
+  "duration_ns": 44287492150,
+  "channels": {
+    "D0": {
+      "transitions": 208,
+      "rising": 105,
+      "interval_us": {
+        "min": 29.0,
+        "mean": 425841.2706730769,
+        "max": 518987.925
+      }
+    },
+    "D1": {
+      "transitions": 189,
+      "rising": 95,
+      "interval_us": {
+        "min": 2944.5,
+        "mean": 468682.175,
+        "max": 518987.925
+      }
+    },
+    "D2": {
+      "transitions": 20404,
+      "rising": 10202,
+      "interval_us": {
+        "min": 23.575,
+        "mean": 4339.150245074013,
+        "max": 3044223.35
+      }
+    },
+    "D3": {
+      "transitions": 817,
+      "rising": 409,
+      "interval_us": {
+        "min": 99148.425,
+        "mean": 108489.39129901961,
+        "max": 3109784.725
+      }
+    },
+    "D4": {
+      "transitions": 881,
+      "rising": 440,
+      "interval_us": {
+        "min": 98248.375,
+        "mean": 100822.29345102506,
+        "max": 355512.1
+      }
+    },
+    "D5": {
+      "transitions": 73028,
+      "rising": 36514,
+      "interval_us": {
+        "min": 17.375,
+        "mean": 1205.438597211952,
+        "max": 487918.5
+      }
+    },
+    "D6": {
+      "transitions": 36417,
+      "rising": 18208,
+      "interval_us": {
+        "min": 19.525,
+        "mean": 340.3015516010326,
+        "max": 5804924.775
+      }
+    },
+    "D7": {
+      "transitions": 30,
+      "rising": 15,
+      "interval_us": {
+        "min": 1692.45,
+        "mean": 1768085.5571428572,
+        "max": 18563373.75
+      }
+    }
+  }
+}

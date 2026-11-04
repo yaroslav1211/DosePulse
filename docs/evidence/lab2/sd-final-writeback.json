@@ -1,0 +1,8 @@
+{
+  "image_sha256": "c148452dc2aeb861df7058ee257c6e30e2c774b7b2a6163ecdbffad09a04a19b",
+  "sector": 4096,
+  "sector_sha256": "27655cd32576d8fa434a01666ec79058a040059e471ce12f5483e937107e22c4",
+  "pattern_matches": true,
+  "before_sector": "512 zero bytes, new disposable image",
+  "after": "Actual firmware write and stop/writeback, host verifies decoded SPI payload"
+}

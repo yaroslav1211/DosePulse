@@ -1,0 +1,79 @@
+DATA t=2009 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=2051 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=2513 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3016 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3519 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4021 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4523 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5025 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5527 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=6029 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SELF device=MPU6050 addr=68 result=0 expected_id=68 state=0 err=0 isr=8
+SELF device=HX711 id=none result=4 raw=0 valid=1
+SELF device=ADC result=0 raw=2050 mv=1652
+DATA t=6528 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=7029 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+ANOMALY addr=69 reg=75 result=1 hardware_diag_error=0
+DATA t=7531 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=8033 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+ACK tare_mg=0
+DATA t=8536 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+ACK fault addr=69
+DATA t=9036 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=9536 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=10036 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=10536 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=11036 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+ACK recover addr=68
+DATA t=11538 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=0
+DATA t=12040 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=0
+DATA t=12542 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=13044 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=13546 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=14048 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=14550 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=15052 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=15554 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=16056 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=16558 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=17060 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=17562 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=18064 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=18566 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=19068 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=19570 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=20072 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SD sector=4096 write=1 result=0 before=f7e51dc5 after=f7e51dc5
+DATA t=20572 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=21073 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=21575 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=22077 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=22579 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=23081 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+ERR command
+DATA t=23583 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+ERR length
+DATA t=24085 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=24587 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=25089 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=25591 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=26093 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SD sector=4096 write=0 result=0 before=f7e51dc5 after=f7e51dc5
+DATA t=26593 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=27094 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=27596 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=28098 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=28600 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=29103 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=29606 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=30109 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=30612 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=31115 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+COUNTS imu=1537 hx=311 adc=308 errors=125 rx_overflow=0 rx_errors=0
+DATA t=31617 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=32119 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=32621 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=33124 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=33625 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=34127 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+PASS short sensor integration, actual I2C recovery, final sensor validity, command errors, actual SD read/write

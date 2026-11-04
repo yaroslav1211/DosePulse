@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/SP-Labs/tools/run_lab2_checks.py", line 8, in <module>
+    with serial.serial_for_url('rfc2217://127.0.0.1:4192',baudrate=115200,timeout=.2) as uart:
+         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/.venv/lib/python3.13/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+    ~~~~~~~~~~~~~^^
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/.venv/lib/python3.13/site-packages/serial/rfc2217.py", line 492, in open
+    self._update_rts_state()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/.venv/lib/python3.13/site-packages/serial/rfc2217.py", line 682, in _update_rts_state
+    self.rfc2217_set_control(SET_CONTROL_RTS_ON)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/.venv/lib/python3.13/site-packages/serial/rfc2217.py", line 888, in rfc2217_set_control
+    item.wait(self._network_timeout)  # wait for acknowledge from the server
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pliffdax/Projects/university/Study/People/Водопʼянов Ярослав Сергійович/2026-Fall/SP/Lab01/Work/.venv/lib/python3.13/site-packages/serial/rfc2217.py", line 362, in wait
+    raise SerialException("timeout while waiting for option {!r}".format(self.name))
+serial.serialutil.SerialException: timeout while waiting for option 'control'

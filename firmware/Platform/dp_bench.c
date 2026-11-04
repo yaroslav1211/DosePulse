@@ -13,13 +13,14 @@ static ADC_HandleTypeDef adc;
 static dp_quality quality;
 static dp_motion motion;
 static uint8_t address=0x68;
-static bool mpu_ready,hx_off,adc_valid;
+static bool mpu_ready,hx_off,adc_valid,hx_read_active;
+static uint32_t hx_irq_mask;
 static dp_result imu_result,hx_result;
 static int32_t hx_raw,tare_mg;
 static uint16_t adc_raw,adc_filtered;
 static uint32_t last_imu,last_hx,last_adc,last_report,retry_at;
 static uint32_t imu_count,hx_count,adc_count,bus_errors;
-static volatile uint32_t rx_overflow;
+static volatile uint32_t rx_overflow,rx_errors;
 static volatile bool rx_lost;
 static uint8_t rx_byte,rx_ring[128];
 static volatile unsigned rx_head,rx_tail;
@@ -36,7 +37,12 @@ static dp_result translate(HAL_StatusTypeDef status){
  return DP_NACK;
 }
 static int hx_data(void *ctx){(void)ctx;return HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_1)==GPIO_PIN_SET;}
-static void hx_clock(void *ctx,int high){(void)ctx;HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,high?GPIO_PIN_SET:GPIO_PIN_RESET);}
+static void hx_clock(void *ctx,int high){
+ (void)ctx;
+ if(hx_read_active&&high){hx_irq_mask=__get_PRIMASK();__disable_irq();}
+ HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,high?GPIO_PIN_SET:GPIO_PIN_RESET);
+ if(hx_read_active&&!high)__set_PRIMASK(hx_irq_mask);
+}
 static dp_bus bus={0,dp_i2c_gpio_read,dp_i2c_gpio_write,hx_data,hx_clock,wait_us};
 static uint8_t spi_exchange(void *ctx,uint8_t value){
  (void)ctx;uint8_t result=0;
@@ -103,7 +109,7 @@ static void command(const char *line){
  }
  else if(!strcmp(line,"sdprobe"))storage_probe(true);
  else if(!strcmp(line,"sdread"))storage_probe(false);
- else if(!strcmp(line,"counts"))printf("COUNTS imu=%lu hx=%lu adc=%lu errors=%lu rx_overflow=%lu\r\n",(unsigned long)imu_count,(unsigned long)hx_count,(unsigned long)adc_count,(unsigned long)bus_errors,(unsigned long)rx_overflow);
+ else if(!strcmp(line,"counts"))printf("COUNTS imu=%lu hx=%lu adc=%lu errors=%lu rx_overflow=%lu rx_errors=%lu\r\n",(unsigned long)imu_count,(unsigned long)hx_count,(unsigned long)adc_count,(unsigned long)bus_errors,(unsigned long)rx_overflow,(unsigned long)rx_errors);
  else puts("ERR command");
 }
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *uart){
@@ -111,6 +117,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *uart){
  unsigned next=(rx_head+1)%sizeof(rx_ring);
  if(next==rx_tail){rx_overflow++;rx_lost=true;}else{rx_ring[rx_head]=rx_byte;rx_head=next;}
  HAL_UART_Receive_IT(&huart2,&rx_byte,1);
+}
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *uart){
+ if(uart!=&huart2)return;
+ rx_errors++;rx_lost=true;
+ __HAL_UART_CLEAR_OREFLAG(uart);
+ (void)HAL_UART_Receive_IT(uart,&rx_byte,1);
 }
 void USART2_IRQHandler(void){HAL_UART_IRQHandler(&huart2);}
 void dp_bench_start(void){
@@ -144,7 +156,7 @@ void dp_bench_poll(void){
   dp_quality_motion(&quality,&motion,imu_result==DP_OK,now);imu_count++;
  }
  if((uint32_t)(now-last_hx)>=10&&!hx_off){
-  last_hx=now;uint32_t mask=__get_PRIMASK();__disable_irq();hx_result=dp_hx_read(&bus,&hx_raw);__set_PRIMASK(mask);
+  last_hx=now;hx_read_active=true;hx_result=dp_hx_read(&bus,&hx_raw);hx_read_active=false;
   if(hx_result==DP_OK){dp_quality_mass(&quality,dp_hx_mg(hx_raw,0),true,now);hx_count++;}
   else if(hx_result!=DP_NOT_READY)dp_quality_mass(&quality,0,false,now);
  }

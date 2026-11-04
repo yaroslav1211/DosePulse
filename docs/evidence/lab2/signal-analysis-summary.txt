@@ -1,0 +1,66 @@
+{
+  "capture": "docs/captures/lab2-integration-verified.vcd",
+  "i2c_frame_count": 2107,
+  "i2c_clock_period_us": {
+    "n": 159687,
+    "min": 144.0,
+    "mean": 175.40088736089976,
+    "max": 661.5
+  },
+  "i2c_14byte_read_us": {
+    "n": 1040,
+    "min": 23343.0,
+    "mean": 23368.796634615384,
+    "max": 25852.5
+  },
+  "adc_marker_width_us": {
+    "n": 298,
+    "min": 63.175,
+    "mean": 64.8251677852349,
+    "max": 67.175
+  },
+  "adc_marker_period_us": {
+    "n": 297,
+    "min": 71091.275,
+    "mean": 111493.95050505051,
+    "max": 325453.975
+  },
+  "hx_full_words": 297,
+  "hx_examples": [
+    {
+      "start_ns": 149973675,
+      "clocks": 25,
+      "bits": "000000000000000000000000",
+      "raw": 0,
+      "duration_us": 588.0
+    },
+    {
+      "start_ns": 261688625,
+      "clocks": 25,
+      "bits": "000000000000000000000000",
+      "raw": 0,
+      "duration_us": 590.475
+    },
+    {
+      "start_ns": 373748050,
+      "clocks": 25,
+      "bits": "000000000000000000000000",
+      "raw": 0,
+      "duration_us": 590.475
+    },
+    {
+      "start_ns": 473922200,
+      "clocks": 25,
+      "bits": "000000000000000000000000",
+      "raw": 0,
+      "duration_us": 590.475
+    },
+    {
+      "start_ns": 574025100,
+      "clocks": 25,
+      "bits": "000000000000000000000000",
+      "raw": 0,
+      "duration_us": 588.0
+    }
+  ]
+}

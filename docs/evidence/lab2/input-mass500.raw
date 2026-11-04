@@ -1,0 +1,12 @@
+DATA t=2011 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SELF device=MPU6050 addr=68 result=0 expected_id=68 state=0 err=0 isr=8
+SELF device=HX711 id=none result=4 raw=210 valid=1
+SELF device=ADC result=0 raw=2050 mv=1652
+DATA t=2513 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3017 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=3520 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4023 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=4526 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5029 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=5532 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+DATA t=6035 hx=210 mg=500000 net_mg=500000 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1

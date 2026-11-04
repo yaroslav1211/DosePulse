@@ -1,0 +1,6 @@
+{
+  "source": "docs/captures/lab2-sd-final.vcd",
+  "sha256": "194e02c7782dc0f9a92d1a6f95ebe208a3b37d5eb3ef3aae7c308c680f6b9ea3",
+  "end_ns": 4000000000,
+  "transformation": "Prefix selection only, unchanged digital samples and original timestamps."
+}

@@ -1,0 +1,69 @@
+{
+  "actual_time_utc": "2026-11-06T16:04:30.887615+00:00",
+  "last_mcu_ms": 55567,
+  "finished": true,
+  "commands": [
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 4000,
+      "command": "selftest"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 5000,
+      "command": "anomaly"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 6000,
+      "command": "tare"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 6500,
+      "command": "fault"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 9000,
+      "command": "recover"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 12000,
+      "command": "hxoff"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 15000,
+      "command": "hxon"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 18000,
+      "command": "sdprobe"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 21000,
+      "command": "invalid"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 21500,
+      "command": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 24000,
+      "command": "sdread"
+    },
+    {
+      "after_DATA_t_ms": 55567,
+      "threshold": 29000,
+      "command": "counts"
+    }
+  ],
+  "firmware_sha256": "658ffa1a5f2bc08aaa7c1f21bb71b6991c3db23810c4125479a098bff239ad9a",
+  "host_elapsed_s": 5.717471209005453
+}

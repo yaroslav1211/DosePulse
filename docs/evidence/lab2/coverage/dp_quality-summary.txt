@@ -1,0 +1,7 @@
+File 'firmware/App/dp_quality.c'
+Lines executed:100.00% of 35
+Branches executed:100.00% of 58
+Taken at least once:86.21% of 58
+No calls
+Creating 'dp_quality.c.gcov'
+

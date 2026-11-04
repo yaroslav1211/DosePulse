@@ -1,0 +1,2 @@
+=1 a_mg=0,0,0 gyro_mdps=0,0,0 temp_mc=0 adc=2050 mv=1652 target_g=551 moving=1 stable=0
+DATA t=55567 hx=0 mg=0 net_mg=0 hx_ok=1 imu=1 a_mg=0,0,0 gyro_mdps=0,0,0 temp_mc=0 adc=2050 mv=1652 target_g=551 moving=1 stable=0

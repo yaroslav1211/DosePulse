@@ -1,0 +1,6 @@
+{
+  "source": "docs/captures/lab2-gpio-after-hardware-init-failed.vcd",
+  "sha256": "82ac22d9b9ab965d8dba16ec418e49839cf466d31b4062464d1b7d732b6ed9dc",
+  "end_ns": 100000000,
+  "transformation": "Prefix selection only, unchanged digital samples and original timestamps."
+}

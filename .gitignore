@@ -5,3 +5,6 @@ wokwi.vcd
 media/demo-sd.img
 build-host/
 *.gcov
+media/sd-probe.img
+.venv/
+docs/captures/lab2-latest.vcd

@@ -1,0 +1,9 @@
+python3 tools/check_dependencies.py
+PASS App/Devices do not include HAL, Core main or Platform
+mkdir -p build-host
+cc -std=c11 -Wall -Wextra -Werror -Ifirmware/Devices -Ifirmware/App tests/test_sensors.c firmware/Devices/dp_sensors.c firmware/App/dp_quality.c -o build-host/test-sensors
+./build-host/test-sensors
+PASS DosePulse sensor conversion, bus errors, HX clocks, median, stability, freshness, rollover, target filter
+cc -std=c11 -Wall -Wextra -Werror -Ifirmware/Devices tests/test_sd.c firmware/Devices/dp_sd.c -o build-host/test-sd
+./build-host/test-sd
+PASS SD command/CRC order, SDHC identity, raw read/write, data token, busy timeout, failures

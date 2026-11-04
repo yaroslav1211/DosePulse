@@ -1,0 +1,6 @@
+{
+  "source": "docs/captures/lab2-integration-verified.vcd",
+  "sha256": "4ceddd6ddc57de86f0f92104d0ad311359a635d989076daf20c99804edead9cb",
+  "end_ns": 400000000,
+  "transformation": "Prefix selection only, unchanged digital samples and original timestamps."
+}

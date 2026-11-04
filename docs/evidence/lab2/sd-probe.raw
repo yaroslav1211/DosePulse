@@ -1,0 +1,4 @@
+DATA t=2009 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SD sector=4096 write=1 result=0 before=4d7705c5 after=f7e51dc5
+DATA t=2514 hx=0 mg=0 net_mg=0 hx_ok=1 imu=0 a_mg=0,0,1000 gyro_mdps=0,0,0 temp_mc=24001 adc=2050 mv=1652 target_g=551 moving=0 stable=1
+SD sector=4096 write=0 result=0 before=f7e51dc5 after=f7e51dc5

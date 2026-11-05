@@ -1,0 +1,8 @@
+{
+  "source": "docs/captures/lab2-sd-final.vcd",
+  "source_sha256": "194e02c7782dc0f9a92d1a6f95ebe208a3b37d5eb3ef3aae7c308c680f6b9ea3",
+  "original_start_ns": 2117600000,
+  "original_end_ns": 2119500000,
+  "selected_transitions": 194,
+  "transformation": "Exact transition window; carry-forward initial state; displayed time = original time minus original_start_ns. Raw source retained."
+}

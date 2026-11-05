@@ -1,0 +1,9 @@
+# microSD: межа готовності сховища
+
+Обрано raw SDHC SPI mode0: PB3 clock,PB4 MISO,PB5 MOSI,PA4 CS. Окрема модель Wokwi,8MiB образ; HAL GPIO адаптер,один512-byteбуфер. Джерела: [Wokwi microSD](https://docs.wokwi.com/parts/wokwi-microsd-card),[writeback/image](https://docs.wokwi.com/vscode/project-config#sd-card-contents),[SD Association, Physical Layer Simplified Specification, Part 1](https://www.sdcard.org/downloads/pls/), розділ SPI; [Analog Devices AN-1443](https://www.analog.com/en/resources/app-notes/an-1443.html), Table 4: CMD17/CMD24. Модель рекламує blockaddressing; це не твердження про фізичну карту8MiB класуSDHC.
+
+Ініціалізація: >=80dummyclocks, CMD0(CRC95), CMD8(1AA, CRC87), CMD55/ACMD41(HCS), CMD58(OCR busy/CCS). Підтримується самеSDHC, legacySDSC відхиляється. CMD17 читає 512bytes, CMD24 записує 512bytes після tokenFE; dataresponse05, потім boundedbusy. Це не NORflash: окрема командаWREN не застосовується. CRC7обов'язкова наCMD0/8; у поточномуSPImodeCRCoff для рештикоманд. Журнал має додати власнуCRC32.
+
+`sdprobe` записує шаблон byte[i]=(i*37+19)mod256 лише в сектор 4096 disposableобразу, потім читає і побайтно порівнює. `sdread` повторно ініціалізує карту і читаєсектор. FNVchecksum показує фактичні байти; він не замінюєCRCмайбутнього журналу. Логи інтеграції підтвердили result0 для запису/читання. Після stop writeback збережено в образ; hostперевірка 512bytes збіглася з шаблоном. Між новими запусками `sdread` бачить попереднійшаблон. Повний журнал порцій, atomicityприreset і powercut не реалізовані і не перевірені.
+
+Для ЛР 3: два черговані сектори наслот,32слоти, sequence/schema/CRC32; ACKпісляread-back. Пошкоджена нова копія не скасовує попередню цілу;запис 512B не вважаєтьсяатомарним. Вимкнення під час CMD24 і startup/recovery - обов'язкові майбутні експерименти. Внутрішняflash не використовується як недоведена заміна.
